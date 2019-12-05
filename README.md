@@ -1,5 +1,5 @@
 # music-browser-api
-## Web-based music player backend.
+## Web-based music player backend
 ---
 Backend that loads, parses and serves up tunes from local filesystem.
 
