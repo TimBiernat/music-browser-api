@@ -1,0 +1,20 @@
+{
+    "extends": [
+        "tslint:recommended"
+    ],
+    "rulesDirectory": [],
+    "rules": {
+        "forin": false,
+        "max-classes-per-file": false,
+        "member-access": false,
+        "no-shadowed-variable": false,
+        "no-unused-expression": false,
+        "object-literal-shorthand": false,
+        "object-literal-sort-keys": false,
+        "only-arrow-functions": false,
+        "space-before-function-paren": false,
+        "radix": false,
+        "interface-name": false
+    },
+    "jsRules": {}
+}
