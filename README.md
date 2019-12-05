@@ -11,6 +11,7 @@ Built with node.js using TypeScript and Express.
 
 Deployment:
 * npm install
-* (setup corresponding music-browser ui project)
+* tsc
+* (setup corresponding music-browser ui project, copy generated dist files to local public dir)
 * npm start
 * point your mobile web browser to to http://{host}:{port}
