@@ -29,9 +29,11 @@ export function stop() {
 }
 
 export function volume(level: number) {
-    exec('osascript -e "set Volume "' + level);  // 0-10
+    const cmd = process.env.VOLUME_EXEC + level;
+    exec(cmd);  // 0-10 on MacOS
 }
 
 export function mute() {
-    exec('osascript -e "set Volume "' + 0);  // 0-10
+    const cmd = process.env.VOLUME_EXEC + 0;
+    exec(cmd);
 }

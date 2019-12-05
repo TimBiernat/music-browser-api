@@ -29,11 +29,13 @@ function stop() {
 }
 exports.stop = stop;
 function volume(level) {
-    child_process_1.exec('osascript -e "set Volume "' + level); // 0-10
+    const cmd = process.env.VOLUME_EXEC + level;
+    child_process_1.exec(cmd); // 0-10 on MacOS
 }
 exports.volume = volume;
 function mute() {
-    child_process_1.exec('osascript -e "set Volume "' + 0); // 0-10
+    const cmd = process.env.VOLUME_EXEC + 0;
+    child_process_1.exec(cmd);
 }
 exports.mute = mute;
 //# sourceMappingURL=player.js.map
