@@ -15,6 +15,7 @@ Deployment:
 
 * npm install
 * update MUSIC_DIR path (where mp3s live) in config.env
+* sudo npm install -g typescript
 * tsc
 * (setup corresponding [music-browser-ui project](https://github.com/TimBiernat/music-browser-ui), copy generated dist files to local public dir)
 * npm start
